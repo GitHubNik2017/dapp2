@@ -3,6 +3,7 @@
 body,
 .pure-g [class*=pure-u] {
   font-family: 'Open Sans', sans-serif;
+  background-color: dimgray;
 }
 
 h1, h2, h3 {
@@ -19,7 +20,7 @@ code {
 .container {
   box-sizing: border-box;
   width: 100%;
-  padding: 45px 20px;
+  padding: 25px 20px;
 }
 
 .pure-button-primary {
@@ -39,7 +40,7 @@ code {
 .navbar {
   position: fixed;
   padding: 5px;
-  background: #0c1a2b;
+  background: black;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
 }
 
@@ -50,7 +51,7 @@ code {
 .navbar a:active,
 .navbar a:focus,
 .navbar a:hover {
-  background: #233e5e;
+  background: black;
 }
 
 .navbar .pure-menu-heading {
@@ -65,4 +66,72 @@ code {
 .navbar .uport-logo {
   height: 16px;
   margin-right: 10px;
+}
+
+.header {
+  height: 50px;
+  width: auto;
+}
+
+/* NEWPAGE */
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.table {
+    border-collapse: collapse;
+    width: 48%;
+    margin: 10px;
+}
+
+.cell {
+    padding: 10px;
+    width: 50%;
+    color: white;
+    background-color: grey;
+    font-size: 20px;
+}
+
+.cell-header {
+    background: dodgerblue;
+    font-size: 25px;
+}
+
+.right,
+.left{
+    flex-grow: 2;
+}
+
+.name {
+    float: left;
+    margin: 10px;
+    font-size: 25px;
+}
+.option {
+    margin: 10px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-bottom-style: ridge;
+    font-size: 15px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.pure-button {
+    float: right;
+    background-color: dodgerblue;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
 }
